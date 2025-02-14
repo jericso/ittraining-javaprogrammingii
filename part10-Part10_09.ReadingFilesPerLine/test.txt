@@ -1,0 +1,32 @@
+DocGroup
+	CA or MN
+
+DocInvType
+-InvoiceType is passed to P8/MP; Description used in application; available types can vary by location (MN/CA)
+	InvoiceType	InvoiceTypeDesc
+	NON-PO		Normal
+	NPCREDIT	Credit Memo
+	CLAIM		Claim
+	AGENT		Agent Refund
+	W9		W-9
+	ONCL		Corp Litigation 
+
+DocPriority
+-Id is passed to P8/MP	
+	1 Low
+        2 Normal
+        3 Rush
+
+BatchNumber
+	ex. MN160602001
+
+	-location (MN/CA), YY, MM, DD, Partitioned sequence number by location
+
+ScanDate
+	- Date Scanned
+ScanType
+	- Scanner or Virtual-Sc
+ScanSource
+	- Application User Id
+CommitDate
+	- Date uploaded to P8/FileNet
