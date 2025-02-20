@@ -1,0 +1,10 @@
+// {type:class}
+// {direction:leftToRight}
+
+[Teacher|-name:String|+Teacher(name:String);+toString():String]
+
+[Class|-course:String|+Class();+printInformation():void]
+[Class]-teacher>[Teacher]
+
+[LearningInstitution||+LearningInstitution();+addTeacher(Teacher teacher):void;+toString():String]
+[LearningInstitution]-teachers*>[Teacher]
